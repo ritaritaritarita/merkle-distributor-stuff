@@ -35,12 +35,14 @@ for address in tokens:
         time.sleep(5)
         print(len(answer))
 #list of all holders in a text file - one per line
+#replace me with the location of the holders list
+#you will have to manually download the holders for each token from etherscan for this step
 f = open("C:\\Users\\<your username>\\Desktop\\hold.txt", 'r')
 k = f.readlines()
 for i in k:
     answer[i.strip()]=1
 print(len(answer))
-
-with open('C:\\Users\\Home\\<your username>\\holders.json', 'w') as fp:
+#replace me with the place you want to dump the json file containing everyone who qualifies
+with open('C:\\Users\\<your username>\\Desktop\\holders.json', 'w') as fp:
     json.dump(answer, fp)
             
