@@ -1,2 +1,11 @@
 # merkle-distributor-stuff
-etherscan-api.py will make a json file with all the addresses that have used a certain token. It also requires a file path to a list of token holders.
+How to use:
+Once you have the list from the python program, put the holders.json file in the scripts folder. Make sure it is named holders.json. Then do 
+
+node generate-merkle-root.js
+
+This will make a file called result.json. To verify everything, run
+
+node verify-merkle-root.js
+
+
