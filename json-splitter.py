@@ -10,7 +10,7 @@ for i in range(len(l)):
     res[l[i]] = data[l[i]]
     if (i%20000==19999):
         counter+=1
-        with open('C:\\Users\\Home\\Desktop\\split'+str(counter)+'.json', 'w') as f:
+        with open('C:\\Users\\<<username>>\\Desktop\\split'+str(counter)+'.json', 'w') as f:
             json.dump(res, f)
             print("files created: "+str(counter))
         res = dict()
